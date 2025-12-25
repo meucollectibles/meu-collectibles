@@ -1,0 +1,92 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f6f5f2; /* blanco hueso */
+  color: #111;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+.search {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+.card img{
+  width: 100%;
+  height: 260px;
+  object-fit: contain;   /* 🔥 imagen completa */
+  background: #f9f9f9;   /* fondo claro */
+  padding: 14px;
+  display: block;
+}
+.card{
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+.content{
+  padding: 16px;
+}
+
+.content h3{
+  margin: 6px 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.price{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 6px 0 14px;
+  color: #111;
+}
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn{
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #25D366;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: filter .2s ease;
+}
+
+.btn:hover{
+  filter: brightness(0.9);
+}
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #aaa;
+}
+
+.legal{
+  font-size:12px;
+  color:#888;
+  margin-top:20px;
+}
+
