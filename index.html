@@ -1,21 +1,36 @@
 <!doctype html>
 <html lang="es">
-<p class="legal">
-Vendemos productos Funko Pop® y otras marcas.
-Funko® es una marca registrada de Funko, LLC.
-</p>
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meu Funko Shop</title>
+  <title>MEU Collectibles</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
   <header class="container">
-    <h1>Meu Collectibles</h1>
+    <h1>MEU Collectibles</h1>
     <p>Catálogo — compra directa por WhatsApp</p>
-    <input id="search" class="search" type="search" placeholder="Buscar Funko..." />
+    <input id="search" class="search" type="search" placeholder="Buscar figura..." />
+
+<div class="filters">
+  <select id="categoryFilter">
+    <option value="all">Todas las categorías</option>
+    <option value="One Piece">One Piece</option>
+    <option value="Poster">Poster</option>
+    <option value="Marvel">Marvel</option>
+    <option value="Full Metal Alchemist">Full Metal Alchemist</option>
+  </select>
+
+  <select id="priceFilter">
+    <option value="default">Ordenar por</option>
+    <option value="low">Precio: menor a mayor</option>
+    <option value="high">Precio: mayor a menor</option>
+  </select>
+</div>
+
+    
   </header>
 
   <main class="container">
@@ -24,8 +39,40 @@ Funko® es una marca registrada de Funko, LLC.
 
   <footer class="container footer">
     <small>© <span id="year"></span> Meu — Ventas por WhatsApp</small>
+
+    <p class="legal">
+      Vendemos productos Funko Pop® y otras marcas.<br>
+      Funko® es una marca registrada de Funko, LLC.
+    </p>
   </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a
+    class="wa-float"
+    href="https://wa.me/50769680686"
+    target="_blank"
+    aria-label="WhatsApp"
+  >
+    WhatsApp
+  </a>
 
   <script src="app.js"></script>
 </body>
 </html>
+
+<div class="filters">
+  <select id="categoryFilter">
+    <option value="all">Todas las categorías</option>
+    <option value="Anime">Anime</option>
+    <option value="Poster">Poster</option>
+    <option value="Marvel">Marvel</option>
+    <option value="Gaming">Gaming</option>
+  </select>
+
+  <select id="priceFilter">
+    <option value="default">Ordenar por</option>
+    <option value="low">Precio: menor a mayor</option>
+    <option value="high">Precio: mayor a menor</option>
+  </select>
+</div>
+
